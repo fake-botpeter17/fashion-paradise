@@ -1,0 +1,17 @@
+[project]
+name = "fashion-paradise"
+version = "0.1.0"
+description = "An AIO web-app to manage Fashion Paradise."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.1.3",
+    "flask-cors>=6.0.2",
+]
+
+[dependency-groups]
+dev = [ "pre-commit>=4.5.1", "ruff>=0.15.8", "mypy>=1.0.0", "pytest>=7.0.0", "bandit>=1.7.0",]
+
+[tool.setuptools.packages.find]
+include = [ "backend*",]
+exclude = [ "frontend*",]
